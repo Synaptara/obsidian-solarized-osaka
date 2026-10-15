@@ -1,0 +1,720 @@
+/* ==========================================================================
+   Solarized Osaka Official Palette
+   ========================================================================== */
+:root {
+  /* Base Shades (Darkest to Lightest) */
+  --base04: #001419;
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #9eabac;
+  --base1: #adb8b8;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+  --base4: #ffffff;
+
+  /* Yellow */
+  --yellow900: #332700;
+  --yellow700: #664d00;
+  --yellow500: #b58900;
+  --yellow300: #ffc100;
+  --yellow100: #ffea9f;
+
+  /* Orange */
+  --orange900: #5c220a;
+  --orange700: #993811;
+  --orange500: #cb4b16;
+  --orange300: #ff5813;
+  --orange100: #ff9468;
+
+  /* Red */
+  --red900: #571110;
+  --red700: #a8211f;
+  --red500: #dc322f;
+  --red300: #f65350;
+  --red100: #ff9e9c;
+
+  /* Magenta */
+  --magenta900: #541432;
+  --magenta700: #a32762;
+  --magenta500: #d33682;
+  --magenta300: #f255a1;
+  --magenta100: #ff77b9;
+
+  /* Violet */
+  --violet900: #22255c;
+  --violet700: #484cb5;
+  --violet500: #6c71c4;
+  --violet300: #9ca0ed;
+  --violet100: #cccfff;
+
+  /* Blue */
+  --blue900: #0f3b59;
+  --blue700: #1c679c;
+  --blue500: #268bd2;
+  --blue300: #49aef5;
+  --blue100: #9cd6ff;
+
+  /* Cyan */
+  --cyan900: #10403c;
+  --cyan700: #1d6e68;
+  --cyan500: #2aa198;
+  --cyan300: #25f5e6;
+  --cyan100: #b0fff9;
+
+  /* Green */
+  --green900: #2c3300;
+  --green700: #596600;
+  --green500: #859900;
+  --green300: #b8fc00;
+  --green100: #d9ff99;
+}
+
+/* ==========================================================================
+   Dark Theme (Solarized Osaka Dark - Minimalist & Borderless)
+   ========================================================================== */
+.theme-dark {
+  /* Obsidian Core Base Tokens */
+  --color-base-00: var(--base04);
+  --color-base-05: var(--base04);
+  --color-base-10: var(--base03);
+  --color-base-20: var(--base04);
+  --color-base-25: var(--base03);
+  --color-base-30: var(--base02);
+  --color-base-35: var(--cyan900);
+  --color-base-40: var(--base01);
+  --color-base-50: var(--base01);
+  --color-base-60: var(--base00);
+  --color-base-70: var(--base0);
+  --color-base-100: var(--base1);
+
+  /* RGB Callout & Accent Tokens */
+  --color-red-rgb: 220, 50, 47;
+  --color-orange-rgb: 203, 75, 22;
+  --color-yellow-rgb: 181, 137, 0;
+  --color-green-rgb: 133, 153, 0;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-blue-rgb: 38, 139, 210;
+  --color-purple-rgb: 108, 113, 196;
+  --color-pink-rgb: 211, 54, 130;
+
+  /* Borderless Workspace Tokens */
+  --divider-width: 0px;
+  --divider-color: transparent;
+  --divider-color-hover: var(--cyan700);
+  --tab-outline-width: 0px;
+  --tab-outline-color: transparent;
+  --tab-Divider-color: transparent;
+  --border-width: 0px;
+
+  /* Surface & Workspace Layers */
+  --background-primary: var(--base04);
+  --background-primary-alt: var(--base03);
+  --background-secondary: var(--base04);
+  --background-secondary-alt: var(--base02);
+  --background-modifier-border: transparent;
+  --background-modifier-hover: var(--base02);
+
+  --titlebar-background: var(--base04);
+  --titlebar-background-focused: var(--base04);
+  --ribbon-background: var(--base04);
+  --ribbon-background-collapsed: var(--base04);
+  --status-bar-background: var(--base03);
+  --status-bar-border-color: transparent;
+
+  /* Typography */
+  --text-normal: var(--base0);
+  --text-muted: var(--base00);
+  --text-faint: var(--base01);
+
+  /* Disable Task Strikethrough */
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--base01);
+
+  /* Headings */
+  --text-title-h1: var(--yellow500);
+  --text-title-h2: var(--orange500);
+  --text-title-h3: var(--red500);
+  --text-title-h4: var(--magenta500);
+  --text-title-h5: var(--violet500);
+  --text-title-h6: var(--cyan500);
+
+  --h1-color: var(--text-title-h1);
+  --h2-color: var(--text-title-h2);
+  --h3-color: var(--text-title-h3);
+  --h4-color: var(--text-title-h4);
+  --h5-color: var(--text-title-h5);
+  --h6-color: var(--text-title-h6);
+
+  /* Links & Accents */
+  --text-link: var(--blue500);
+  --text-a: var(--cyan500);
+  --text-a-hover: var(--cyan300);
+  --text-a-url: var(--blue300);
+  --text-mark: rgba(181, 137, 0, 0.35);
+  --text-highlight-bg: rgba(181, 137, 0, 0.3);
+
+  /* Code */
+  --pre-code: var(--base03);
+  --inline-code: var(--cyan300);
+  --code-block: var(--base1);
+  --code-background: var(--base03);
+  --code-normal: var(--base0);
+
+  /* Interactive */
+  --interactive-accent: var(--cyan500);
+  --interactive-accent-hover: var(--cyan300);
+  --interactive-before: var(--base01);
+  --text-accent: var(--cyan500);
+  --interactive-accent-rgb: 42, 161, 152;
+
+  /* Tables */
+  --table-border-color: var(--base02);
+  --table-header: var(--base02);
+  --table-header-fg: var(--yellow300);
+  --table-row-even: var(--base04);
+  --table-row-odd: rgba(0, 43, 54, 0.55);
+  --table-hover: var(--base02);
+
+  /* Misc */
+  --vim-cursor-background: var(--yellow300);
+  --vim-cursor-color: var(--base04);
+  --text-selection: rgba(7, 54, 66, 0.85);
+  --text-tag: var(--magenta300);
+  --task-checkbox: var(--cyan500);
+  --bold-color: var(--base2);
+  --italic-color: var(--violet300);
+}
+
+/* ==========================================================================
+   Light Theme (Solarized Osaka Light - Minimalist & Borderless)
+   ========================================================================== */
+.theme-light {
+  --color-base-00: var(--base3);
+  --color-base-05: var(--base3);
+  --color-base-10: var(--base2);
+  --color-base-20: var(--base2);
+  --color-base-25: #e6dfca;
+  --color-base-30: #d5ceb8;
+  --color-base-35: #c4bd9f;
+  --color-base-40: var(--base1);
+  --color-base-50: var(--base0);
+  --color-base-60: var(--base00);
+  --color-base-70: var(--base01);
+  --color-base-100: var(--base02);
+
+  --divider-width: 0px;
+  --divider-color: transparent;
+  --tab-outline-width: 0px;
+  --tab-outline-color: transparent;
+  --border-width: 0px;
+
+  --background-primary: var(--base3);
+  --background-primary-alt: var(--base2);
+  --background-secondary: var(--base3);
+  --background-secondary-alt: var(--base2);
+  --background-modifier-border: transparent;
+  --background-modifier-hover: var(--base2);
+
+  --titlebar-background: var(--base3);
+  --titlebar-background-focused: var(--base3);
+  --ribbon-background: var(--base3);
+  --ribbon-background-collapsed: var(--base3);
+  --status-bar-background: var(--base2);
+
+  --text-normal: var(--base02);
+  --text-muted: var(--base01);
+  --text-faint: var(--base00);
+
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--base00);
+
+  --text-title-h1: var(--yellow700);
+  --text-title-h2: var(--orange700);
+  --text-title-h3: var(--red700);
+  --text-title-h4: var(--magenta700);
+  --text-title-h5: var(--violet700);
+  --text-title-h6: var(--cyan700);
+
+  --h1-color: var(--text-title-h1);
+  --h2-color: var(--text-title-h2);
+  --h3-color: var(--text-title-h3);
+  --h4-color: var(--text-title-h4);
+  --h5-color: var(--text-title-h5);
+  --h6-color: var(--text-title-h6);
+
+  --text-link: var(--blue700);
+  --text-a: var(--cyan700);
+  --text-a-hover: var(--blue500);
+  --text-a-url: var(--blue700);
+  --text-mark: rgba(255, 193, 0, 0.35);
+  --text-highlight-bg: var(--yellow100);
+
+  --pre-code: var(--base2);
+  --inline-code: var(--orange700);
+  --code-block: var(--base03);
+  --code-background: var(--base2);
+  --code-normal: var(--base03);
+
+  --interactive-accent: var(--cyan700);
+  --interactive-accent-hover: var(--cyan500);
+  --interactive-before: var(--base00);
+  --text-accent: var(--cyan700);
+  --interactive-accent-rgb: 29, 110, 104;
+
+  --table-border-color: #dfd8c2;
+  --table-header: var(--base2);
+  --table-header-fg: var(--cyan700);
+  --table-row-even: var(--base3);
+  --table-row-odd: #f6efe0;
+  --table-hover: var(--base2);
+
+  --vim-cursor-background: var(--base03);
+  --vim-cursor-color: var(--base3);
+  --text-selection: rgba(42, 161, 152, 0.25);
+  --text-tag: var(--violet700);
+  --task-checkbox: var(--cyan700);
+  --bold-color: var(--base04);
+  --italic-color: var(--magenta700);
+}
+
+/* ==========================================================================
+   1. Borderless & Minimalist Workspace UI
+   ========================================================================== */
+body {
+  --font-text-theme:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-monospace-theme:
+    "Geist Mono", "Dank Mono", "Hack Nerd Font", "Source Code Pro",
+    ui-monospace, monospace;
+}
+
+body.theme-dark,
+body.theme-light,
+.workspace-split.mod-root .workspace-leaf-content,
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content,
+.workspace-ribbon,
+.workspace-tab-header-container,
+.workspace-sidedock-vault-profile {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal);
+  border: none !important;
+}
+
+/* Remove all split dividers, header borders, and tab outlines */
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right,
+.workspace-tab-header-container,
+.view-header,
+.workspace-sidedock-vault-profile,
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Show subtle cyan line only when actively dragging a resize handle */
+.workspace-leaf-resize-handle:hover {
+  background-color: var(--base02) !important;
+}
+
+/* Sleek Floating Pill Tabs (Removes bulky tab outlines) */
+.workspace-tab-header-container-inner {
+  gap: 4px;
+  padding: 4px 6px 0 6px;
+}
+
+.workspace-tab-header {
+  border-radius: 6px !important;
+  border: none !important;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--background-secondary-alt) !important;
+  color: var(--cyan300) !important;
+  box-shadow: none !important;
+}
+
+/* Remove curved tab corners at the bottom of active tab */
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  display: none !important;
+}
+
+/* Minimal Floating Status Bar */
+.status-bar {
+  background-color: var(--background-primary-alt) !important;
+  border: none !important;
+  border-radius: 6px;
+  margin: 0 8px 8px 0;
+  padding: 4px 10px;
+  box-shadow: none !important;
+}
+
+/* Sidebar File Tree Polish */
+.nav-file-title,
+.nav-folder-title {
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-bottom: 2px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.is-active .nav-file-title {
+  color: var(--cyan300) !important;
+  background-color: var(--background-secondary-alt) !important;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   2. Custom Checkboxes & Tasks (No Strikethrough)
+   ========================================================================== */
+/* Never strike through completed tasks */
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
+.markdown-preview-view ul > li.task-list-item.is-checked,
+ul > li.task-list-item[data-task="x"],
+ul > li.task-list-item[data-task="X"] {
+  text-decoration: none !important;
+  color: var(--text-muted) !important;
+}
+
+/* Custom Checkbox Styling */
+input.task-list-item-checkbox,
+.task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--cyan500) !important;
+  border-radius: 4px !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+input.task-list-item-checkbox:hover,
+.task-list-item-checkbox:hover {
+  border-color: var(--cyan300) !important;
+  background-color: rgba(42, 161, 152, 0.15) !important;
+}
+
+input.task-list-item-checkbox:checked,
+.task-list-item-checkbox:checked {
+  background-color: var(--cyan500) !important;
+  border-color: var(--cyan500) !important;
+  box-shadow: none !important;
+}
+
+/* Crisp Checkmark Inside Checked Box */
+input.task-list-item-checkbox:checked::after,
+.task-list-item-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--base04);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background-color: transparent !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* ==========================================================================
+   3. Callouts (Notes, Info, Tips, Warnings, Danger, Quotes)
+   ========================================================================== */
+.callout {
+  border-radius: 8px;
+  border: none;
+  border-left: 4px solid rgb(var(--callout-color));
+  background-color: rgba(var(--callout-color), 0.1) !important;
+  padding: 12px 16px;
+  margin: 1em 0;
+  box-shadow: none;
+}
+
+.callout-title {
+  font-weight: 600;
+  gap: 8px;
+  color: rgb(var(--callout-color));
+  padding-bottom: 4px;
+}
+
+.callout-content {
+  color: var(--text-normal);
+}
+
+/* Solarized Osaka Specific Callout Flavors */
+.callout[data-callout="note"] {
+  --callout-color: 38, 139, 210; /* Blue 500 */
+  background-color: rgba(15, 59, 89, 0.45) !important;
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  --callout-color: 42, 161, 152; /* Cyan 500 */
+  background-color: rgba(16, 64, 60, 0.45) !important;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"],
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: 133, 153, 0; /* Green 500 */
+  background-color: rgba(44, 51, 0, 0.45) !important;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  --callout-color: 181, 137, 0; /* Yellow 500 */
+  background-color: rgba(51, 39, 0, 0.45) !important;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"],
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  --callout-color: 220, 50, 47; /* Red 500 */
+  background-color: rgba(87, 17, 16, 0.45) !important;
+}
+
+.callout[data-callout="example"] {
+  --callout-color: 108, 113, 196; /* Violet 500 */
+  background-color: rgba(34, 37, 92, 0.45) !important;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 158, 171, 172; /* Base 0 */
+  background-color: rgba(7, 54, 66, 0.5) !important;
+}
+
+/* Blockquotes */
+.markdown-rendered blockquote,
+.HyperMD-quote {
+  border-left: 3px solid var(--cyan500) !important;
+  background-color: rgba(7, 54, 66, 0.4);
+  padding: 8px 14px;
+  border-radius: 0 6px 6px 0;
+  color: var(--base1);
+}
+
+/* ==========================================================================
+   4. Modern Rounded Tables
+   ========================================================================== */
+.markdown-rendered table,
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid var(--table-border-color) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.markdown-rendered th,
+th {
+  font-weight: 600 !important;
+  text-align: left;
+  background-color: var(--table-header) !important;
+  color: var(--table-header-fg) !important;
+  padding: 10px 14px !important;
+  border-bottom: 1px solid var(--cyan900) !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.markdown-rendered td,
+td {
+  padding: 9px 14px !important;
+  border-bottom: 1px solid rgba(7, 54, 66, 0.6) !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.markdown-rendered tr:last-child td,
+tr:last-child td {
+  border-bottom: none !important;
+}
+
+.markdown-rendered tr:nth-child(even),
+tr:nth-child(even) {
+  background-color: var(--table-row-even);
+}
+
+.markdown-rendered tr:nth-child(odd),
+tr:nth-child(odd) {
+  background-color: var(--table-row-odd);
+}
+
+.markdown-rendered tr:hover td,
+tr:hover td {
+  background-color: var(--table-hover) !important;
+}
+
+/* ==========================================================================
+   5. Typography, Headings, Code, Links & Tags
+   ========================================================================== */
+strong,
+.cm-line .cm-strong {
+  font-weight: 600;
+  color: var(--bold-color);
+}
+
+em,
+.cm-line .cm-em {
+  color: var(--italic-color);
+}
+
+a,
+.cm-hmd-internal-link {
+  color: var(--text-a);
+  text-decoration: none;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url {
+  color: var(--text-a-hover);
+  text-decoration: none;
+}
+
+/* Pill-styled Tags */
+a.tag,
+a.tag:hover {
+  color: var(--magenta300);
+  background-color: var(--magenta900);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.85em;
+}
+
+.cm-hashtag-begin {
+  color: var(--magenta300);
+  background-color: var(--magenta900);
+  padding: 2px 0 2px 8px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.cm-hashtag-end {
+  color: var(--magenta300);
+  background-color: var(--magenta900);
+  padding: 2px 8px 2px 0;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+mark {
+  background-color: var(--text-mark);
+  color: var(--base2);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+::selection {
+  background-color: var(--text-selection);
+}
+
+/* Headings */
+.cm-header {
+  font-weight: 600;
+}
+.HyperMD-header-1,
+.markdown-preview-section h1 {
+  font-weight: 600;
+  font-size: 2em;
+  color: var(--text-title-h1);
+}
+.HyperMD-header-2,
+.markdown-preview-section h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+  color: var(--text-title-h2);
+}
+.HyperMD-header-3,
+.markdown-preview-section h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--text-title-h3);
+}
+.HyperMD-header-4,
+.markdown-preview-section h4 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--text-title-h4);
+}
+.HyperMD-header-5,
+.markdown-preview-section h5 {
+  font-weight: 600;
+  font-size: 1.15em;
+  color: var(--text-title-h5);
+}
+.HyperMD-header-6,
+.markdown-preview-section h6 {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--text-title-h6);
+}
+
+/* Code Blocks & Inline Code */
+.HyperMD-codeblock-bg,
+.theme-dark pre[class*="language-"],
+.theme-light pre[class*="language-"] {
+  background-color: var(--pre-code) !important;
+}
+
+.HyperMD-codeblock {
+  line-height: 1.5em;
+  color: var(--code-block);
+}
+
+.HyperMD-codeblock-begin {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.HyperMD-codeblock-end {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+body.theme-dark .markdown-rendered :not(pre) > code,
+body.theme-light .markdown-rendered :not(pre) > code,
+body.theme-dark .cm-line .cm-inline-code,
+body.theme-light .cm-line .cm-inline-code {
+  color: var(--inline-code);
+  background-color: var(--pre-code);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none !important;
+  height: 1px;
+  background-color: var(--base02) !important;
+  margin: 2em 0;
+}
