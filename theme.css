@@ -298,9 +298,9 @@ body.theme-light,
 .workspace-ribbon,
 .workspace-tab-header-container,
 .workspace-sidedock-vault-profile {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
   color: var(--text-normal);
-  border: none !important;
+  border: none;
 }
 
 /* Remove all split dividers, header borders, and tab outlines */
@@ -313,14 +313,14 @@ body.theme-light,
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  border: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 /* Show subtle cyan line only when actively dragging a resize handle */
 .workspace-leaf-resize-handle:hover {
-  background-color: var(--base02) !important;
+  background-color: var(--base02);
 }
 
 /* Sleek Floating Pill Tabs (Removes bulky tab outlines) */
@@ -330,30 +330,30 @@ body.theme-light,
 }
 
 .workspace-tab-header {
-  border-radius: 6px !important;
-  border: none !important;
+  border-radius: 6px;
+  border: none;
 }
 
 .workspace-tab-header.is-active {
-  background-color: var(--background-secondary-alt) !important;
-  color: var(--cyan300) !important;
-  box-shadow: none !important;
+  background-color: var(--background-secondary-alt);
+  color: var(--cyan300);
+  box-shadow: none;
 }
 
 /* Remove curved tab corners at the bottom of active tab */
 .workspace-tab-header::before,
 .workspace-tab-header::after {
-  display: none !important;
+  display: none;
 }
 
 /* Minimal Floating Status Bar */
 .status-bar {
-  background-color: var(--background-primary-alt) !important;
-  border: none !important;
+  background-color: var(--background-primary-alt);
+  border: none;
   border-radius: 6px;
   margin: 0 8px 8px 0;
   padding: 4px 10px;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 /* Sidebar File Tree Polish */
@@ -368,8 +368,8 @@ body.theme-light,
 }
 
 .is-active .nav-file-title {
-  color: var(--cyan300) !important;
-  background-color: var(--background-secondary-alt) !important;
+  color: var(--cyan300);
+  background-color: var(--background-secondary-alt);
   font-weight: 500;
 }
 
@@ -382,8 +382,8 @@ body.theme-light,
 .markdown-preview-view ul > li.task-list-item.is-checked,
 ul > li.task-list-item[data-task="x"],
 ul > li.task-list-item[data-task="X"] {
-  text-decoration: none !important;
-  color: var(--text-muted) !important;
+  text-decoration: none;
+  color: var(--text-muted);
 }
 
 /* Custom Checkbox Styling */
@@ -393,9 +393,9 @@ input.task-list-item-checkbox,
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
-  border: 1.5px solid var(--cyan500) !important;
-  border-radius: 4px !important;
-  background-color: transparent !important;
+  border: 1.5px solid var(--cyan500);
+  border-radius: 4px;
+  background-color: transparent;
   cursor: pointer;
   position: relative;
   top: 2px;
@@ -405,15 +405,15 @@ input.task-list-item-checkbox,
 
 input.task-list-item-checkbox:hover,
 .task-list-item-checkbox:hover {
-  border-color: var(--cyan300) !important;
-  background-color: rgba(42, 161, 152, 0.15) !important;
+  border-color: var(--cyan300);
+  background-color: rgba(42, 161, 152, 0.15);
 }
 
 input.task-list-item-checkbox:checked,
 .task-list-item-checkbox:checked {
-  background-color: var(--cyan500) !important;
-  border-color: var(--cyan500) !important;
-  box-shadow: none !important;
+  background-color: var(--cyan500);
+  border-color: var(--cyan500);
+  box-shadow: none;
 }
 
 /* Crisp Checkmark Inside Checked Box */
@@ -428,9 +428,7 @@ input.task-list-item-checkbox:checked::after,
   border: solid var(--base04);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  background-color: transparent !important;
-  -webkit-mask-image: none !important;
-  mask-image: none !important;
+  background-color: transparent;
 }
 
 /* ==========================================================================
@@ -440,7 +438,7 @@ input.task-list-item-checkbox:checked::after,
   border-radius: 8px;
   border: none;
   border-left: 4px solid rgb(var(--callout-color));
-  background-color: rgba(var(--callout-color), 0.1) !important;
+  background-color: rgba(var(--callout-color), 0.1);
   padding: 12px 16px;
   margin: 1em 0;
   box-shadow: none;
@@ -459,14 +457,14 @@ input.task-list-item-checkbox:checked::after,
 
 /* Solarized Osaka Specific Callout Flavors */
 .callout[data-callout="note"] {
-  --callout-color: 38, 139, 210; /* Blue 500 */
-  background-color: rgba(15, 59, 89, 0.45) !important;
+  --callout-color: 38, 139, 210;
+  background-color: rgba(15, 59, 89, 0.45);
 }
 
 .callout[data-callout="info"],
 .callout[data-callout="todo"] {
-  --callout-color: 42, 161, 152; /* Cyan 500 */
-  background-color: rgba(16, 64, 60, 0.45) !important;
+  --callout-color: 42, 161, 152;
+  background-color: rgba(16, 64, 60, 0.45);
 }
 
 .callout[data-callout="tip"],
@@ -475,8 +473,8 @@ input.task-list-item-checkbox:checked::after,
 .callout[data-callout="success"],
 .callout[data-callout="check"],
 .callout[data-callout="done"] {
-  --callout-color: 133, 153, 0; /* Green 500 */
-  background-color: rgba(44, 51, 0, 0.45) !important;
+  --callout-color: 133, 153, 0;
+  background-color: rgba(44, 51, 0, 0.45);
 }
 
 .callout[data-callout="warning"],
@@ -485,8 +483,8 @@ input.task-list-item-checkbox:checked::after,
 .callout[data-callout="question"],
 .callout[data-callout="help"],
 .callout[data-callout="faq"] {
-  --callout-color: 181, 137, 0; /* Yellow 500 */
-  background-color: rgba(51, 39, 0, 0.45) !important;
+  --callout-color: 181, 137, 0;
+  background-color: rgba(51, 39, 0, 0.45);
 }
 
 .callout[data-callout="danger"],
@@ -495,25 +493,25 @@ input.task-list-item-checkbox:checked::after,
 .callout[data-callout="failure"],
 .callout[data-callout="fail"],
 .callout[data-callout="missing"] {
-  --callout-color: 220, 50, 47; /* Red 500 */
-  background-color: rgba(87, 17, 16, 0.45) !important;
+  --callout-color: 220, 50, 47;
+  background-color: rgba(87, 17, 16, 0.45);
 }
 
 .callout[data-callout="example"] {
-  --callout-color: 108, 113, 196; /* Violet 500 */
-  background-color: rgba(34, 37, 92, 0.45) !important;
+  --callout-color: 108, 113, 196;
+  background-color: rgba(34, 37, 92, 0.45);
 }
 
 .callout[data-callout="quote"],
 .callout[data-callout="cite"] {
-  --callout-color: 158, 171, 172; /* Base 0 */
-  background-color: rgba(7, 54, 66, 0.5) !important;
+  --callout-color: 158, 171, 172;
+  background-color: rgba(7, 54, 66, 0.5);
 }
 
 /* Blockquotes */
 .markdown-rendered blockquote,
 .HyperMD-quote {
-  border-left: 3px solid var(--cyan500) !important;
+  border-left: 3px solid var(--cyan500);
   background-color: rgba(7, 54, 66, 0.4);
   padding: 8px 14px;
   border-radius: 0 6px 6px 0;
@@ -525,9 +523,9 @@ input.task-list-item-checkbox:checked::after,
    ========================================================================== */
 .markdown-rendered table,
 table {
-  border-collapse: separate !important;
+  border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid var(--table-border-color) !important;
+  border: 1px solid var(--table-border-color);
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -536,27 +534,27 @@ table {
 
 .markdown-rendered th,
 th {
-  font-weight: 600 !important;
+  font-weight: 600;
   text-align: left;
-  background-color: var(--table-header) !important;
-  color: var(--table-header-fg) !important;
-  padding: 10px 14px !important;
-  border-bottom: 1px solid var(--cyan900) !important;
-  border-left: none !important;
-  border-right: none !important;
+  background-color: var(--table-header);
+  color: var(--table-header-fg);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--cyan900);
+  border-left: none;
+  border-right: none;
 }
 
 .markdown-rendered td,
 td {
-  padding: 9px 14px !important;
-  border-bottom: 1px solid rgba(7, 54, 66, 0.6) !important;
-  border-left: none !important;
-  border-right: none !important;
+  padding: 9px 14px;
+  border-bottom: 1px solid rgba(7, 54, 66, 0.6);
+  border-left: none;
+  border-right: none;
 }
 
 .markdown-rendered tr:last-child td,
 tr:last-child td {
-  border-bottom: none !important;
+  border-bottom: none;
 }
 
 .markdown-rendered tr:nth-child(even),
@@ -571,7 +569,7 @@ tr:nth-child(odd) {
 
 .markdown-rendered tr:hover td,
 tr:hover td {
-  background-color: var(--table-hover) !important;
+  background-color: var(--table-hover);
 }
 
 /* ==========================================================================
@@ -683,7 +681,7 @@ mark {
 .HyperMD-codeblock-bg,
 .theme-dark pre[class*="language-"],
 .theme-light pre[class*="language-"] {
-  background-color: var(--pre-code) !important;
+  background-color: var(--pre-code);
 }
 
 .HyperMD-codeblock {
@@ -713,8 +711,8 @@ body.theme-light .cm-line .cm-inline-code {
 
 /* Horizontal Rule */
 hr {
-  border: none !important;
+  border: none;
   height: 1px;
-  background-color: var(--base02) !important;
+  background-color: var(--base02);
   margin: 2em 0;
 }
